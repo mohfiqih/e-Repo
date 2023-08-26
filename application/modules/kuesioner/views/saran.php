@@ -175,7 +175,7 @@
 
                 if (identitas && nama && jawaban && paket && prodi && sebagai && gender) {
                      $.ajax({
-                          url: 'https://api.e-repository.my.id/',
+                          url: 'http://web-API/',
                           data: $('form').serialize(),
                           type: 'POST',
                           complete: function(response) {
@@ -203,7 +203,7 @@
       }
 
       function redirectToThankYouPage() {
-           window.location.href = 'https://sistem-evaluasi.e-repository.my.id/kuesioner/rating';
+           window.location.href = 'https://localhost/e-Repo/kuesioner/rating';
       }
 
       function playSuccessSound() {
